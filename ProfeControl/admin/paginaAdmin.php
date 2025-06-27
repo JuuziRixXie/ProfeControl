@@ -103,7 +103,7 @@
             background-color: var(--rojo-vivo);
         }
 
-        /* Modal */
+        /* tuneo pal modal */
         .modal {
             display: none;
             position: fixed;
@@ -202,7 +202,7 @@
         </table>
     </div>
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <div id="userModal" class="modal">
         <div class="modal-content">
             <h3>Nuevo Usuario</h3>
@@ -225,7 +225,7 @@
     </div>
 
     <script>
-        // Cierra modal al hacer clic fuera
+        //Esto es para que si clickean fuera el modal se cierre
         window.onclick = function(event) {
             const modal = document.getElementById('userModal');
             if (event.target == modal) {
