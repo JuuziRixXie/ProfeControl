@@ -146,13 +146,13 @@
     </header>
 
     <div class="container">
-        <!-- Botones principales -->
+        <!-- BOTONES -->
         <div>
             <button class="main-button" onclick="mostrarSeccion('maestros')">Lista Maestros</button>
             <button class="main-button" onclick="mostrarSeccion('solicitudes')">Ver Solicitudes</button>
         </div>
 
-        <!-- Sección: Lista de Maestros -->
+        <!-- LISTA DE MAESTROS -->
 <div id="seccion-maestros" class="section" style="display:none;">
     <h2>Lista de Maestros</h2>
     <form action="actualizar_estado.php" method="POST">
@@ -164,7 +164,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- FILAS DE EJEMPLO -->
+                <!-- EJEMPLO DE COMO QUEDA -->
                 <tr>
                     <td>Juan Pérez</td>
                     <td>
@@ -211,11 +211,11 @@
     </form>
 </div>
 
-        <!-- Sección: Ver Solicitudes -->
+        <!-- PARA VER SOLICITUDES -->
         <div id="seccion-solicitudes" class="section" style="display:none;">
             <h2>Solicitudes Recibidas</h2>
 
-            <!-- TARJETAS DE SOLICITUDES -->
+            <!-- RECUADRO PARA CADA SOLICITUD -->
             <div class="solicitud-card">
                 <p><strong>Maestro:</strong> Juan Pérez</p>
                 <p><strong>Solicitud:</strong> Inscripción a curso de actualización pedagógica</p>
