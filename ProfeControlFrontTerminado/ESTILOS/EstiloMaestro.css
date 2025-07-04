@@ -1,0 +1,136 @@
+:root {
+      --fondo: #F5F1EB;
+      --crema: #EDE6DA;
+      --carbón: #2B2B2B;
+      --dorado: #C0A772;
+      --blanco: #FFFFFF;
+      --sombra: rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--fondo);
+      color: var(--carbón);
+      display: flex;
+    }
+
+    .sidebar {
+      width: 240px;
+      background-color: #A38A6F;
+      color: var(--blanco);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 20px;
+      height: 100vh;
+      box-shadow: 6px 0 15px var(--sombra);
+      border-right: 4px solid var(--dorado);
+    }
+
+    .sidebar img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 30px;
+    }
+
+    .sidebar-nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar button {
+      background-color: transparent;
+      border: none;
+      color: var(--blanco);
+      font-size: 16px;
+      margin: 10px 0;
+      cursor: pointer;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .logout-button {
+      background-color: var(--carbón);
+      color: var(--blanco);
+      border: none;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px var(--sombra);
+      align-self: center;
+    }
+
+    .logout-button:hover {
+      background-color: var(--dorado);
+      color: var(--carbón);
+    }
+
+    .content {
+      flex: 1;
+      padding: 60px;
+      position: relative;
+    }
+
+    .section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+      position: relative;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .action-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    .edit-btn {
+      background-color: var(--dorado);
+      color: var(--carbón);
+    }
+
+    .delete-btn {
+      background-color: #c04f4f;
+      color: var(--blanco);
+    }
+
+    .solicitud {
+      background: var(--blanco);
+      padding: 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px var(--sombra);
+    }
